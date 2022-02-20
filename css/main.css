@@ -585,13 +585,14 @@ p {
 
 @media screen and (min-width: 1200px) {
   .work {
-    width: 1200px;
     display: block;
   }
 }
 
 .work__list {
   display: flex;
+  margin-left: auto;
+  margin-right: -30px;
 }
 
 .work__item {
