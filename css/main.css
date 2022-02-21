@@ -41,7 +41,7 @@
 }
 
 .modal {
-  min-width: 450px;
+  width: 450px;
   min-height: 581px;
   padding: 40px;
   box-sizing: border-box;
@@ -363,7 +363,13 @@ p {
 .header__container {
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    height: 80px;
+  }
 }
 
 .nav {
@@ -600,8 +606,8 @@ p {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -642,7 +648,7 @@ p {
 .hero__title {
   color: var(--primary-bg-color);
   font-weight: 900;
-  font-size: 16px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
@@ -688,6 +694,13 @@ p {
 .advantages {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .advantages__list {
@@ -900,12 +913,19 @@ p {
 
 .team__title {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36;
+    margin-bottom: 50px;
+  }
 }
 
 .cards__title {
@@ -940,7 +960,7 @@ p {
 
 .clients__title {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
@@ -950,6 +970,7 @@ p {
 @media screen and (min-width: 1200px) {
   .clients__title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -1024,6 +1045,7 @@ p {
 @media screen and (min-width: 1200px) {
   .footer__contacts {
     margin-right: 70px;
+    align-items: flex-start;
   }
 }
 
@@ -1042,9 +1064,16 @@ p {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .address__list {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .address__list {
     margin-bottom: 0;
+    align-items: flex-start;
   }
 }
 
@@ -1080,6 +1109,12 @@ p {
   color: var(--address-color);
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-box__text {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1191,8 +1226,27 @@ p {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .button-box {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-box {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-box {
+    margin-bottom: 50px;
+  }
 }
 
 .button-box__list {
@@ -1205,6 +1259,7 @@ p {
 @media screen and (min-width: 768px) {
   .button-box__list {
     justify-content: center;
+    margin-bottom: 0;
   }
 }
 
@@ -1220,6 +1275,12 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .button-box__button {
+    margin-bottom: 0;
+  }
 }
 
 .button-box__button:hover, .button-box__button:focus {
